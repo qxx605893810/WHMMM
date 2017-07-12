@@ -1,0 +1,30 @@
+@import url(color.less);
+
+#content {
+  > .row {
+    margin: 20px 0;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+      flex: 1;
+      margin: 10px;
+      border: 1px solid @border-color;
+      text-align: center;
+      height: 160px;
+      > a {
+        display: block;
+        text-decoration: none;
+        color: #080808;
+        > img {
+          width: 100px;
+          height: 100px;
+          margin-top: 10px;
+        }
+        > .text {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}

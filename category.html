@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端适口 -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/comment.less"/>
+    <link rel="stylesheet/less" href="./css/category.less">
+    <script type="text/javascript" src='./libs/less/less.js'></script>
+    <script type="text/html" id="category-template">
+        {{each result as value i}}
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}"
+                       aria-expanded="true" aria-controls="collapseOne" data-title-my-id="{{value.titleId}}">
+                        {{value.title}}
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse{{i}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <script type="text/html" id="category-item-template">
+        {{each result as value i}}
+        <div class="col-xs-4"><a href="product.html?categoryid={{value.categoryId}}">{{value.category}}</a></div>
+        {{/each}}
+    </script>
+</head>
+<body>
+<!-- 头部 B -->
+<header id="header">
+</header>
+<!-- 头部 E -->
+<!-- 搜索 B -->
+<section id="search">
+</section>
+<!-- 搜索 E -->
+<!-- 分页区域 B -->
+<section id="category">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+    </div>
+</section>
+<!-- 分页区域 E -->
+
+<!-- 底部 B -->
+<section id="footer">
+</section>
+<!-- 底部 E -->
+
+
+</body>
+<script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="./libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script src="js/commen.js"></script>
+<script src="./js/category.js"></script>
+</html>

@@ -1,0 +1,68 @@
+/*product B*/
+#product {
+  padding: 10px;
+}
+#product > .media {
+  border-bottom: 1px solid #e6e6e6;
+}
+#product > .media > .media-left > a {
+  display: block;
+}
+#product > .media > .media-left > a > img {
+  width: 99px;
+  height: 100px;
+}
+#product > .media > .media-body {
+  position: relative;
+}
+#product > .media > .media-body > .normal-info {
+  margin-top: 10px;
+}
+#product > .media > .media-body > .normal-info > .product-price {
+  color: #ff841d;
+}
+#product > .media > .media-body > .other-info {
+  color: #bbb;
+  position: absolute;
+  bottom: 10px;
+}
+#product > .media > .media-body > .other-info > .comment {
+  position: relative;
+  left: 25px;
+}
+#product > .media > .media-body > .other-info > .comment::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: url("../images/ic_comment.png") no-repeat;
+  background-size: 15px 15px;
+  right: 68px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*��ҳ B*/
+#money-page {
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+#money-page > .product-page {
+  display: flex;
+}
+#money-page > .product-page > a {
+  flex: 1;
+  border: 1px solid #ccc;
+  background-color: #ebebeb;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: #5a5a5a;
+}
+#money-page > .product-page > .ui-select {
+  flex: 1;
+  text-align: center;
+}
+#money-page > .product-page > .ui-select > select {
+  padding: 5px;
+}

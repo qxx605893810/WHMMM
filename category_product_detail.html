@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端适口 -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买分类</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/comment.less"/>
+    <link rel="stylesheet/less" href="./css/category_product_detail.less">
+    <script type="text/javascript" src='./libs/less/less.js'></script>
+    <script type="text/html" id="mainProduct">
+        {{each result as value i}}
+        <div class="productM">
+            <a href="#" class="mainContent">
+                {{#value.productImg}}
+                <div>{{#value.productName}}</div>
+            </a>
+            <a href="#" class="collect"><img src="./images/sc.jpg" alt=""/></a>
+        </div>
+        {{/each}}
+
+    </script>
+    <!--商店比价-->
+    <!--{{each result as value i}}-->
+    <!-- -->
+    <!--{{/each}}-->
+    <!-- 评论-->
+    <script type="text/html" id="mainCommentId">
+        {{each result as value i}}
+        <div class="mainComment">
+            <div class="name">
+                <span class="buyerName">{{value.comName}}</span>
+                <span class="date">{{value.comTime}}</span>
+            </div>
+            <div class="buy">{{value.comFrom}}</div>
+            <p>{{value.comContent}}</p>
+            <a href="#">回复</a>
+        </div>
+        {{/each}}
+    </script>
+</head>
+<body>
+<!-- 头部 B -->
+<header id="header">
+</header>
+<!-- 头部 E -->
+<!-- 搜索 B -->
+<section id="search">
+</section>
+<!-- 搜索 E -->
+<!--产品导航 B-->
+<div id="product-info">
+    <ol class="breadcrumb">
+        <li><a href="index.html">首页</a></li>
+    </ol>
+</div>
+<!--产品导航 E-->
+<!--产品栏 B-->
+<div id="product-main">
+
+</div>
+<!--产品栏 E-->
+<!--阴影 B-->
+<div id="shadow">
+</div>
+<!--阴影 E-->
+<!--对比 B-->
+<div id="contrast">
+    <p>比价购买</p>
+    <img src="./images/tab_ar.png" alt=""/>
+</div>
+<!--对比 E-->
+<!--商店 B-->
+<div id="shop">
+    <div class="shopC">
+    </div>
+    <p>*以实际参考价格为准</p>
+</div>
+<!--商店 E-->
+<!--评论 B-->
+<div id="comment">
+    <span></span>
+
+    <div class="highComment">优质网友选评</div>
+    <div class="commentC">
+    </div>
+    <div class="more">
+        <a href="#">查看更多评价</a>
+    </div>
+</div>
+<!--评论 E-->
+<!-- 底部 B -->
+<section id="footer">
+</section>
+<!-- 底部 E -->
+</body>
+<script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="./libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script src="js/commen.js"></script>
+<script src="./js/category_product_detail.js"></script>
+</html>

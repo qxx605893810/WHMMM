@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端适口 -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>白菜价</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/comment.less"/>
+    <link rel="stylesheet/less" href="./css/baicaijia.less">
+    <script type="text/javascript" src='./libs/less/less.js'></script>
+    <script type="text/html" id="navId">
+        {{each result as value i}}
+        <li><a data-title-id={{value.titleId}} href="#">{{value.title}}</a></li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="mediaId">
+        {{each result as value i}}
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    {{#value.productImg}}
+                </a>
+            </div>
+            <div class="media-body">
+                <div class="normal-info">
+                    <div class="product-name">{{#value.productName}}</div>
+                    <span class="product-price">{{#value.productPrice}}</span>
+                </div>
+                <div class="other-info">
+                    <span class="favorable-page"><a href="#">{{#value.productCoupon}}</a></span>
+                    <span class="order-link"><a href="#">{{#value.productHref}}</a></span>
+
+                    <div class="pull-down">{{#value.productCouponRemain}}</div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+</head>
+<body>
+<!-- 头部 B -->
+<header id="header" class="back">
+</header>
+<!-- 头部 E -->
+<!--nav B-->
+<div id="nav">
+    <div class="nav">
+        <ul>
+        </ul>
+    </div>
+</div>
+<!--nav E-->
+<!--content B-->
+<div id="content">
+    <!--<div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img src="./images/product_info.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="media-body">
+            <div class="normal-info">
+                <div class="product-name">包邮包邮包邮包邮包邮包邮包邮包邮</div>
+                <span class="product-price"><i>券后</i><em>¥</em>8.9<del>¥19</del></span>
+            </div>
+            <div class="other-info">
+                <span class="favorable-page"><a href="#">5元优惠券</a></span>
+                <span class="order-link"><a href="#">下单链接</a></span>
+                <div class="pull-down">已经领取</div>
+            </div>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img src="./images/product_info.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="media-body">
+            <div class="normal-info">
+                <div class="product-name">包邮包邮包邮包邮包邮包邮包邮包邮</div>
+                <span class="product-price"><i>券后</i><em>¥</em>8.9<del>¥19</del></span>
+            </div>
+            <div class="other-info">
+                <span class="favorable-page"><a href="#">5元优惠券</a></span>
+                <span class="order-link"><a href="#">下单链接</a></span>
+                <div class="pull-down">已经领取</div>
+            </div>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img src="./images/product_info.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="media-body">
+            <div class="normal-info">
+                <div class="product-name">包邮包邮包邮包邮包邮包邮包邮包邮</div>
+                <span class="product-price"><i>券后</i><em>¥</em>8.9<del>¥19</del></span>
+            </div>
+            <div class="other-info">
+                <span class="favorable-page"><a href="#">5元优惠券</a></span>
+                <span class="order-link"><a href="#">下单链接</a></span>
+                <div class="pull-down">已经领取</div>
+            </div>
+        </div>
+    </div>-->
+</div>
+<!--content E-->
+<!-- 底部 B -->
+<section id="footer">
+</section>
+<!-- 底部 E -->
+
+
+</body>
+<script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="./libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script src="js/commen.js"></script>
+<script src="js/baicaijia.js"></script>
+</html>

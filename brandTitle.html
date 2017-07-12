@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端适口 -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>商城导航</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/comment.less"/>
+    <link rel="stylesheet/less" href="./css/brandTitle.less">
+    <script type="text/javascript" src='./libs/less/less.js'></script>
+    <script type="text/html" id="panelTemplate">
+        {{each result as value i}}
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}"
+                       aria-expanded="true" aria-controls="collapseOne" data-title-id="{{value.brandTitleId}}">
+                        {{value.brandTitle}}
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse{{i}}" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <!-- <a href="#">
+                         <span class="brandName">创维</span>
+                         <span class="brandInfo">30天全网销售：463532件</span>
+                     </a>-->
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <script type="text/html" id="panelBodyTemplate">
+        {{each result as value i}}
+        <a href="brandTitle-list.html?brandTitleId={{value.brandTitleId}}">
+            <span class="brandName">{{value.brandName}}</span>
+            <span class="brandInfo">{{value.brandInfo}}</span>
+        </a>
+        {{/each}}
+    </script>
+</head>
+<body>
+<!-- 头部 B -->
+<header id="header">
+</header>
+<!-- 头部 E -->
+<!-- 搜索 B -->
+<section id="search">
+</section>
+<!-- 搜索 E -->
+<!--nav B-->
+<div id="nav">
+    <div class="nav">
+        <ol class="breadcrumb">
+            <li><a href="#">首页</a></li>
+            <li class="active">品牌大全</li>
+        </ol>
+    </div>
+</div>
+<!--nav E-->
+<!--content B-->
+<div id="content">
+    <p>热门品牌导航</p>
+
+    <div class="contentList">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <!-- <div class="panel panel-default">
+                 <div class="panel-heading" role="tab" id="headingOne">
+                     <h4 class="panel-title">
+                         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                             标题1
+                         </a>
+                     </h4>
+                 </div>
+                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                     <div class="panel-body">
+                         <span class="brandName">创维</span>
+                         <span class="brandInfo">30天全网销售：463532件</span>
+                     </div>
+                 </div>
+             </div>
+             <div class="panel panel-default">
+                 <div class="panel-heading" role="tab" id="headingTwo">
+                     <h4 class="panel-title">
+                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                             标题2
+                         </a>
+                     </h4>
+                 </div>
+                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                     <div class="panel-body">
+                         内容2
+                     </div>
+                 </div>
+             </div>
+             <div class="panel panel-default">
+                 <div class="panel-heading" role="tab" id="headingThree">
+                     <h4 class="panel-title">
+                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                            href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                             标题3
+                         </a>
+                     </h4>
+                 </div>
+                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                     <div class="panel-body">
+                         内容3
+                     </div>
+                 </div>
+             </div>-->
+        </div>
+    </div>
+</div>
+<!--content E-->
+<!-- 底部 B -->
+<section id="footer">
+</section>
+<!-- 底部 E -->
+</body>
+<script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="./libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script src="js/commen.js"></script>
+<script src="js/brandTitle.js"></script>
+</html>

@@ -1,0 +1,78 @@
+@import url(color.less);
+
+/*product B*/
+#product {
+  padding: 10px;
+  > .media {
+    border-bottom: 1px solid @border-color;
+    > .media-left {
+      > a {
+        display: block;
+        > img {
+          width: 99px;
+          height: 100px;
+
+        }
+      }
+    }
+    > .media-body {
+      position: relative;
+      > .normal-info {
+        margin-top: 10px;
+        > .product-price {
+          color: @title-background-color;
+        }
+      }
+
+      > .other-info {
+        color: #bbb;
+        position: absolute;
+        bottom: 10px;
+        > .comment {
+          position: relative;
+          left: 25px;
+        }
+        > .comment::before {
+          content: "";
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          background: url("../images/ic_comment.png") no-repeat;
+          background-size: 15px 15px;
+          right: 68px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+  }
+
+}
+
+/*·ÖÒ³ B*/
+#money-page {
+  padding: 10px;
+  background-color: #f9f9f9;
+  > .product-page {
+    display: flex;
+    > a {
+      flex: 1;
+      border: 1px solid #ccc;
+      background-color: #ebebeb;
+      padding: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      text-align: center;
+      color: #5a5a5a;
+    }
+    > .ui-select {
+      flex: 1;
+      text-align: center;
+      >select{
+        padding: 5px;
+      }
+    }
+
+  }
+}

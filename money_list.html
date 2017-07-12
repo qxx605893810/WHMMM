@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端适口 -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>国内折扣商品详情</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/comment.less"/>
+    <link rel="stylesheet/less" href="./css/money_list.less">
+    <script type="text/javascript" src='./libs/less/less.js'></script>
+    <script type="text/html" id="productTemplate">
+        {{each result as value i}}
+        <div class="product-list">
+            <h3>{{value.productName}}</h3>
+
+            <p class="price">{{value.productPinkage}}</p>
+
+            <p class="shop">{{value.productFrom}}&nbsp;&nbsp;{{value.productTime}}&nbsp;&nbsp;{{value.productTips}} </p>
+
+            <div class="media">
+                <div class="media-body">
+                    <div class="normal-info">
+                        <span>{{value.productInfo}}</span>
+                    </div>
+                </div>
+                <div class="media-left">
+                    {{#value.productImg2}}
+                </div>
+            </div>
+            <div class="picture-content">{{#value.productImg2}}</div>
+            <a href="#">前往购买</a>
+        </div>
+
+        <div class="comment">
+                {{#value.productComment}}
+        </div>
+        {{/each}}
+    </script>
+</head>
+<body>
+<!-- 头部 B -->
+<header id="header" class="back">
+</header>
+<!-- 头部 E -->
+<!-- 搜索 B -->
+<section id="search">
+</section>
+<!--product B-->
+<div id="product-list">
+
+</div>
+<!--product E-->
+<!--阴影 B-->
+<div id="shadow">
+    <div class="shadow"></div>
+    <img src="./images/mmbweixin2.png" alt=""/>
+
+    <div class="shadow"></div>
+</div>
+<!--阴影 E-->
+<!--评论 B-->
+<div id="comment">
+</div>
+<!--评论 E-->
+
+<!-- 底部 B -->
+<section id="footer">
+</section>
+<!-- 底部 E -->
+
+
+</body>
+<script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="./libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script src="js/commen.js"></script>
+<script src="js/money_list.js"></script>
+</html>

@@ -1,0 +1,128 @@
+/*ͷ�� B*/
+#header {
+  height: 50px;
+  background-color: #ff841d;
+  position: relative;
+}
+#header > .logo1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+  box-sizing: content-box;
+  background: url("../images/icon_bar.png") no-repeat -86px 2px;
+  background-size: 220px 132px;
+  background-clip: content-box;
+}
+#header > .logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+#header > .logo > img {
+  width: 186px;
+  height: 25px;
+}
+#header > .logo > .classImg {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+#header > .app {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+#header > .app > img {
+  height: 34px;
+  width: 34px;
+}
+#header > p {
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+}
+/*ͷ�� E*/
+/*���� B*/
+#search {
+  border-bottom: 1px solid #e6e6e6;
+}
+#search > form {
+  display: flex;
+  padding: 10px;
+}
+#search > form > input[type="search"] {
+  flex: 1;
+  margin-right: 10px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  border: 0;
+  outline: none;
+  padding-left: 10px;
+}
+#search > form > input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: url("../images/cancel.png");
+  background-size: 15px 15px;
+}
+#search > form > input[type="submit"] {
+  width: 63px;
+  height: 30px;
+  background-color: #ff841d;
+  border-radius: 15px;
+  border: 0;
+  color: #fff;
+}
+/*���� E*/
+/*�ײ� B */
+#footer {
+  padding-top: 10px;
+  background-color: #f2f2f2;
+}
+#footer > .row {
+  margin: 0;
+}
+#footer > .row > div {
+  padding: 0;
+}
+#footer > .row > div > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  padding: 5px;
+  color: #5a5a5a;
+  border-left: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+#footer > .row > div:last-of-type > a::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: url("../images/top.png");
+  background-size: 15px 15px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#footer > .normal-info {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+}
+#footer > .normal-info > a {
+  color: #f00;
+}
+/*�ײ� E */

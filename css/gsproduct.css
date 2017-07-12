@@ -1,0 +1,114 @@
+#nav > .row {
+  margin: 0;
+  text-align: center;
+}
+#nav > .row > .shop {
+  padding: 10px;
+}
+#nav > .row > .shop > a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+#nav > .row > .shop > a::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  background: url("../images/down.png") no-repeat;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#nav > .row > .shop > a.checked::before {
+  background: url("../images/up.png") no-repeat;
+}
+#nav > .row > .area {
+  padding: 10px;
+}
+#nav > .row > .area > a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+}
+#nav > .row > .area > a::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  background: url("../images/down.png") no-repeat;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#nav > .row > .area > a.checked::before {
+  background: url("../images/up.png") no-repeat;
+}
+#nav > .content > .shop-content {
+  display: none;
+  width: 100%;
+  background-color: red;
+}
+#nav > .content > .shop-content > a {
+  display: block;
+  padding: 10px;
+  color: #0f0f0f;
+  position: relative;
+  text-decoration: none;
+}
+#nav > .content > .shop-content > a.section::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 22px;
+  background: url("../images/check.png") no-repeat;
+  right: 0;
+}
+#nav > .content > .area-content {
+  background-color: blue;
+  display: none;
+}
+#nav > .content > .area-content > a {
+  display: block;
+  padding: 10px;
+  color: #0f0f0f;
+  position: relative;
+  text-decoration: none;
+}
+#nav > .content > .area-content > a.section::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 22px;
+  background: url("../images/check.png") no-repeat;
+  right: 0;
+}
+#content > .row {
+  margin: 0;
+}
+#content > .row > .product {
+  border: 10px solid #e6e6e6;
+  background-color: #fff;
+  height: 289px;
+}
+#content > .row > .product > a {
+  display: block;
+  text-decoration: none;
+}
+#content > .row > .product > a > img {
+  width: 140px;
+  height: 140px;
+}
+#content > .row > .product > a > .name {
+  color: #0f0f0f;
+  margin: 0;
+}
+#content > .row > .product > a > .price {
+  color: #f97d1d;
+  font-size: 18px;
+}
+#content > .row > .product > a > .price > em {
+  font-style: normal;
+  font-size: 14px;
+}

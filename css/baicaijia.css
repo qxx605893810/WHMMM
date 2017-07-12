@@ -1,0 +1,90 @@
+#nav > .nav {
+  overflow: hidden;
+}
+#nav > .nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  transform: translateX(0px);
+}
+#nav > .nav > ul > li {
+  float: left;
+}
+#nav > .nav > ul > li > a {
+  display: block;
+  width: 100px;
+  height: 50px;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  color: #000;
+}
+/*content B*/
+#content > .media {
+  padding: 10px;
+  border-bottom: 10px solid #e6e6e6;
+}
+#content > .media > .media-left > a > img {
+  width: 100px;
+  height: 100px;
+}
+#content > .media > .media-body > .normal-info {
+  margin-bottom: 10px;
+}
+#content > .media > .media-body > .normal-info > .product-name {
+  color: #333;
+}
+#content > .media > .media-body > .normal-info > .product-price {
+  color: red;
+  font-size: 22px;
+}
+#content > .media > .media-body > .normal-info > .product-price > i {
+  font-style: normal;
+  margin-right: 5px;
+  font-size: 14px;
+}
+#content > .media > .media-body > .normal-info > .product-price > em {
+  font-style: normal;
+  color: red;
+  font-size: 14px;
+  margin-right: 2px;
+}
+#content > .media > .media-body > .normal-info > .product-price > del {
+  margin-left: 50px;
+  font-size: 14px;
+  color: #a1a1a1;
+}
+#content > .media > .media-body > .other-info {
+  position: relative;
+  height: 50px;
+}
+#content > .media > .media-body > .other-info > .favorable-page {
+  position: relative;
+  left: 0;
+}
+#content > .media > .media-body > .other-info > .favorable-page > a {
+  border: 1px dashed red;
+  padding: 5px;
+  color: red;
+  text-decoration: none;
+}
+#content > .media > .media-body > .other-info > .order-link {
+  right: 0;
+  position: absolute;
+}
+#content > .media > .media-body > .other-info > .order-link > a {
+  background-color: indianred;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #ff841d;
+  border-radius: 5px;
+}
+#content > .media > .media-body > .other-info > .pull-down {
+  position: relative;
+  bottom: -10px;
+  color: #a1a1a1;
+}
+/*content E*/

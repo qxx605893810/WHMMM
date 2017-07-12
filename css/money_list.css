@@ -1,0 +1,138 @@
+/*product B*/
+#product-list > .product-list {
+  padding: 10px;
+}
+#product-list > .product-list > h3 {
+  margin: 0;
+}
+#product-list > .product-list > .price {
+  margin: 5px 0;
+  color: #ff841d;
+}
+#product-list > .product-list > .shop {
+  font-size: 14px;
+  color: #bbbbbb;
+}
+#product-list > .product-list > .media > .media-body > .normal-info > span {
+  text-align: center;
+  color: #5a5a5a;
+}
+#product-list > .product-list > .media > .media-left > img {
+  width: 120px;
+  height: 120px;
+}
+#product-list > .product-list > .picture-content {
+  text-align: center;
+  margin: 10px 0;
+}
+#product-list > .product-list > .picture-content > img {
+  width: 220px;
+  height: 220px;
+}
+#product-list > .product-list > a {
+  display: block;
+  text-align: center;
+  background-color: #ff841d;
+  padding: 5px;
+  border: 1px solid #e6e6e6;
+  border-radius: 7px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+/*product E*/
+/*��Ӱ B*/
+#shadow > .shadow {
+  width: 100%;
+  background-color: #ebebeb;
+  height: 20px;
+}
+#shadow > img {
+  width: 100%;
+}
+/*��Ӱ E*/
+/*���� B*/
+.comment {
+  padding: 10px;
+  font-size: 16px;
+  /*>.comment{
+    position: relative;
+    > p {
+      margin: 0;
+    }
+    > .submit {
+      > input[type="text"] {
+        width: 100%;
+        height: 100px;
+      }
+      div {
+        width: 100%;
+        background-color: #ebebeb;
+        overflow: hidden;
+        border: 1px solid #aaa;
+        position: relative;
+        top: -24px;
+        > input[type="submit"] {
+          float: right;
+          border: 0;
+          height: 35px;
+          padding: 0 20px;
+          color: #fff;
+
+          background-color: @title-background-color;
+        }
+      }
+    }
+  }*/
+}
+.comment > .cu-content-pl > .reply > .form {
+  position: relative;
+}
+.comment > .cu-content-pl > .reply > .form > textarea {
+  width: 100%;
+  height: 100px;
+}
+.comment > .cu-content-pl > .reply > .form > .ctrl {
+  width: 100%;
+  position: absolute;
+  top: 74px;
+  background-color: #eee;
+  border: 1px solid #bbbbbb;
+}
+.comment > .cu-content-pl > .reply > .form > .ctrl > input {
+  float: right;
+  border: 0;
+  padding: 5px;
+  background-color: #ff841d;
+  color: #fff;
+}
+.comment > .cu-content-pl > .list {
+  overflow: hidden;
+}
+.comment > .cu-content-pl > .list > ul {
+  list-style: none;
+  padding: 10px;
+}
+.comment > .cu-content-pl > .list > ul > li {
+  display: inline-block;
+  margin-top: 10px;
+}
+.comment > .cu-content-pl > .list > ul > li > .userimg {
+  float: left;
+  text-align: center;
+  display: block;
+}
+.comment > .cu-content-pl > .list > ul > li > .con {
+  float: left;
+  margin-left: 20px;
+}
+.comment > .cu-content-pl > .list > ul > li > .con > .name {
+  color: #666695;
+  font-size: 14px;
+}
+.comment > .cu-content-pl > .list > ul > li > .con > .name > .username {
+  float: left;
+}
+.comment > .cu-content-pl > .list > ul > li > .con > .name > .time {
+  float: right;
+}
+/*���� E*/

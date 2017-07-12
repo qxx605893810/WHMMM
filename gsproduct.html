@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端适口 -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>凑单品</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/comment.less"/>
+    <link rel="stylesheet/less" href="./css/gsproduct.less">
+    <script type="text/javascript" src='./libs/less/less.js'></script>
+    <script type="text/html" id="shopContentId">
+        {{each result as value i}}
+        <a data-title-shop-id="{{value.shopId}}" href="#">{{value.shopName}}</a>
+        {{/each}}
+    </script>
+    <script type="text/html" id="areaContentId">
+        {{each result as value i}}
+        <a data-title-area-id="{{value.areaId}}" href="#">{{value.areaName}}</a>
+        {{/each}}
+    </script>
+    <script type="text/html" id="contentId">
+    {{each result as value i}}
+    <div class="product col-xs-6" >
+        <a href="#">
+            {{#value.productImg}}
+            <p class="name">{{value.productName}}</p>
+            <p class="price">{{value.productPrice}}</p>
+        </a>
+    </div>
+    {{/each}}
+</script>
+</head>
+<body>
+<!-- 头部 B -->
+<header id="header" class="back">
+</header>
+<!-- 头部 E -->
+<!--nav B-->
+<section id="nav">
+    <div class="row">
+        <div class="col-xs-6 shop"><a href="#">店铺</a></div>
+        <div class="col-xs-6 area"><a href="#">地区</a></div>
+    </div>
+    <div class="content">
+        <div class="shop-content">
+            <!--<a href="#">天猫</a>
+            <a href="#">京东</a>
+            <a href="#">苏宁</a>-->
+        </div>
+        <div class="area-content">
+            <!--  <a href="#">华东</a>
+              <a href="#">华南</a>
+              <a href="#">华北</a>
+              <a href="#">华中</a>-->
+        </div>
+    </div>
+</section>
+<!--nav E-->
+<!--content B-->
+<div id="content">
+    <div class="row">
+        <!--<div class="product col-xs-6" >
+            <a href="#">
+                <img src="./images/product_info.jpg" alt=""/>
+                <p class="name">名字</p>
+                <p class="price"><em>¥</em>&nbsp;9.9</p>
+            </a>
+        </div>
+        <div class="product col-xs-6" >
+            <a href="#">
+                <img src="./images/product_info.jpg" alt=""/>
+                <p class="name">名字</p>
+                <p class="price"><em>¥</em>&nbsp;9.9</p>
+            </a>
+        </div>
+        <div class="product col-xs-6" >
+            <a href="#">
+                <img src="./images/product_info.jpg" alt=""/>
+                <p class="name">名字</p>
+                <p class="price"><em>¥</em>&nbsp;9.9</p>
+            </a>
+        </div>
+        <div class="product col-xs-6" >
+            <a href="#">
+                <img src="./images/product_info.jpg" alt=""/>
+                <p class="name">名字</p>
+                <p class="price"><em>¥</em>&nbsp;9.9</p>
+            </a>
+        </div>
+        <div class="product col-xs-6" >
+            <a href="#">
+                <img src="./images/product_info.jpg" alt=""/>
+                <p class="name">名字</p>
+                <p class="price"><em>¥</em>&nbsp;9.9</p>
+            </a>
+        </div>-->
+    </div>
+</div>
+<!--content E-->
+<!-- 底部 B -->
+<section id="footer">
+</section>
+<!-- 底部 E -->
+
+
+</body>
+<script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="./libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script src="js/commen.js"></script>
+<script src="js/gsproduct.js"></script>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端适口 -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买分类</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/comment.less"/>
+    <link rel="stylesheet/less" href="./css/product.less">
+    <script type="text/javascript" src='./libs/less/less.js'></script>
+    <script type="text/html" id="recommend-template">
+        {{each result as value i}}
+        <div class="media">
+            <div class="media-left">
+                <a href="category_product_detail.html?productid={{value.productId}}">
+                   {{#value.productImg}}
+                </a>
+            </div>
+            <div class="media-body">
+                <div class="normal-info">
+                    <span class="product-name">{{value.productName}}</span>
+
+                    <div class="product-price">{{value.productPrice}}</div>
+                </div>
+                <div class="other-info">
+                    <span class="from-time">{{value.productQuote}}</span>
+                    <span class="comment">{{value.productCom}}</span>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+</head>
+<body>
+<!-- 头部 B -->
+<header id="header">
+</header>
+<!-- 头部 E -->
+<!-- 搜索 B -->
+<section id="search">
+</section>
+<!-- 搜索 E -->
+<!-- 分页区域 B -->
+<section id="product-list">
+    <div class="recommend-list">
+    <!--    <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img src="./images/product_info.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="media-body">
+                <div class="normal-info">
+                    <span class="product-name">商品</span>
+
+                    <div class="product-price">价格</div>
+                </div>
+                <div class="other-info">
+                    <span class="from-time">商城报价</span>
+                    <span class="comment">评论</span>
+                </div>
+            </div>
+        </div>
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img src="./images/product_info.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="media-body">
+                <div class="normal-info">
+                    <span class="product-name">商品</span>
+
+                    <div class="product-price">价格</div>
+                </div>
+                <div class="other-info">
+                    <span class="from-time">商城报价</span>
+                    <span class="comment">评论</span>
+                </div>
+            </div>
+        </div>-->
+    </div>
+    <div class="product-page">
+        <a href="#" class="prev-page">上一页</a>
+        <div class="ui-select">
+            <select>
+            </select>
+        </div>
+        <a href="#"  class="next-page">下一页</a>
+    </div>
+</section>
+<!-- 分页区域 E -->
+
+<!-- 底部 B -->
+<section id="footer">
+</section>
+<!-- 底部 E -->
+</body>
+<script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="./libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script src="js/commen.js"></script>
+<script src="./js/product.js"></script>
+</html>

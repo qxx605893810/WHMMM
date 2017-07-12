@@ -1,0 +1,104 @@
+/*nav B*/
+#nav > .nav > .breadcrumb {
+  margin: 0;
+}
+#nav > .nav > .breadcrumb > li > a {
+  color: #666;
+}
+#nav > .nav > .breadcrumb > .active {
+  color: #0f0f0f;
+}
+#nav > .nav > .breadcrumb > li::before {
+  content: ">";
+}
+#nav > .nav > .breadcrumb > li:first-of-type::before {
+  content: "";
+}
+/*nav E*/
+/*content B*/
+#content > .content {
+  background-color: #f5f5f5;
+}
+#content > .content > span {
+  color: #a24604;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+#content > .content > .brandInfo > .brand {
+  padding: 10px;
+  overflow: hidden;
+  border-bottom: 1px solid #e6e6e6;
+}
+#content > .content > .brandInfo > .brand > span {
+  width: 21px;
+  height: 21px;
+  background-color: #c9c9c9;
+  display: block;
+  text-align: center;
+  color: #fff;
+  float: left;
+}
+#content > .content > .brandInfo > .brand > a {
+  text-decoration: none;
+  display: block;
+  width: 90%;
+  float: left;
+  margin-left: 10px;
+}
+#content > .content > .brandInfo > .brand > a > .brand-name {
+  color: #0f0f0f;
+  font-size: 16px;
+  position: relative;
+}
+#content > .content > .brandInfo > .brand > a > .brand-name::before {
+  content: ">";
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%);
+}
+#content > .content > .brandInfo > .brand > a > .brand-sell {
+  color: #8c8c8c;
+}
+#content > .content > .sell > .sellRank {
+  color: #a24604;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+#content > .content > .sell > .media {
+  margin: 0;
+  padding: 10px;
+}
+#content > .content > .sell > .media > .media-left > a > img {
+  width: 100px;
+  height: 100px;
+}
+#content > .content > .sell > .media > .media-body {
+  padding-left: 10px;
+  font-size: 16px;
+}
+#content > .content > .sell > .media > .media-body > .normal-info > .product-name {
+  color: #0f0f0f;
+}
+#content > .content > .sell > .media > .media-body > .normal-info > .product-price {
+  color: red;
+  font-size: 18px;
+}
+#content > .content > .sell > .media > .media-body > .other-info {
+  color: #8c8c8c;
+}
+#content > .content > .sell > .media > .media-body > .other-info > .from-time {
+  float: left;
+}
+#content > .content > .sell > .media > .media-body > .other-info > .comment {
+  float: right;
+}
+/*content E*/

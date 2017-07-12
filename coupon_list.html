@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端适口 -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>优惠券列表</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/comment.less"/>
+    <link rel="stylesheet/less" href="./css/coupon_list.less">
+    <script type="text/javascript" src='./libs/less/less.js'></script>
+    <script type="text/html" id="contentTemId">
+        {{each result as value i}}
+        <div class="content">
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        {{#value.couponProductImg}}
+                    </a>
+                </div>
+                <div class="media-body">
+                    <div class="normal-info">
+                        <span class="product-name">{{value.couponProductName}}</span>
+                    </div>
+                    <div class="other-info">
+                        <span class="product-price">{{value.couponProductPrice}}</span>
+
+                        <div class="product-validity">{{value.couponProductTime}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+</head>
+<body>
+<!-- 头部 B -->
+<header id="header" class="back">
+</header>
+<!-- 头部 E -->
+<!--content B-->
+<div id="content1">
+    <p>-- 点餐前请先出示你的优惠券 --</p>
+
+    <!--<div class="content">
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img src="./images/product_info.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="media-body">
+                <div class="normal-info">
+                    <span class="product-name">标题</span>
+                    <span class="product-title">2017年肯德基优惠券</span>
+                </div>
+                <div class="other-info">
+                    <span class="product-price">$20.00</span>
+
+                    <div class="product-validity">有效期6月30号</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img src="./images/product_info.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="media-body">
+                <div class="normal-info">
+                    <span class="product-name">标题</span>
+                    <span class="product-title">2017年肯德基优惠券</span>
+                </div>
+                <div class="other-info">
+                    <span class="product-price">$20.00</span>
+
+                    <div class="product-validity">有效期6月30号</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img src="./images/product_info.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="media-body">
+                <div class="normal-info">
+                    <span class="product-name">标题</span>
+                    <span class="product-title">2017年肯德基优惠券</span>
+                </div>
+                <div class="other-info">
+                    <span class="product-price">$20.00</span>
+
+                    <div class="product-validity">有效期6月30号</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img src="./images/product_info.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="media-body">
+                <div class="normal-info">
+                    <span class="product-name">标题</span>
+                    <span class="product-title">2017年肯德基优惠券</span>
+                </div>
+                <div class="other-info">
+                    <span class="product-price">$20.00</span>
+
+                    <div class="product-validity">有效期6月30号</div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+</div>
+<!--content E-->
+<!-- 底部 B -->
+<section id="footer">
+</section>
+<!-- 底部 E -->
+</body>
+<script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="./libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script src="js/commen.js"></script>
+<script src="js/coupon_list.js"></script>
+</html>

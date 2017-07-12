@@ -1,0 +1,160 @@
+@import url(color.less);
+
+/*product B*/
+#product-list {
+  > .product-list {
+    padding: 10px;
+    > h3 {
+      margin: 0;
+    }
+    > .price {
+      margin: 5px 0;
+      color: @title-background-color;
+    }
+    > .shop {
+      font-size: 14px;
+      color: #bbbbbb;
+    }
+    > .media {
+      > .media-body {
+        > .normal-info {
+          > span {
+            text-align: center;
+            color: #5a5a5a;
+          }
+        }
+      }
+      > .media-left {
+        > img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+    > .picture-content {
+      text-align: center;
+      margin: 10px 0;
+      > img {
+        width: 220px;
+        height: 220px;
+      }
+    }
+    > a {
+      display: block;
+      text-align: center;
+      background-color: @title-background-color;
+      padding: 5px;
+      border: 1px solid @border-color;
+      border-radius: 7px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/*product E*/
+/*阴影 B*/
+#shadow {
+  > .shadow {
+    width: 100%;
+    background-color: #ebebeb;
+    height: 20px;
+  }
+  > img {
+    width: 100%;
+  }
+}
+
+/*阴影 E*/
+/*评论 B*/
+.comment {
+  padding: 10px;
+  font-size: 16px;
+  > .cu-content-pl {
+    > .reply {
+      > .form {
+        position: relative;
+        > textarea {
+          width: 100%;
+          height: 100px;
+        }
+        > .ctrl {
+          width: 100%;
+          position: absolute;
+          top: 74px;
+          background-color: #eee;
+          border: 1px solid #bbbbbb;
+          > input {
+            float: right;
+            border: 0;
+            padding: 5px;
+            background-color: @title-background-color;
+            color: #fff;
+          }
+        }
+      }
+    }
+    > .list {
+      overflow: hidden;
+      > ul {
+        list-style: none;
+        padding: 10px;
+        > li {
+          display:inline-block;
+          margin-top: 10px;
+          > .userimg {
+            float: left;
+            text-align: center;
+            display: block;
+          }
+          > .con {
+            float: left;
+            margin-left: 20px;
+            > .name {
+              color: #666695;
+              font-size: 14px;
+              > .username {
+                float: left;
+              }
+              > .time {
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*>.comment{
+    position: relative;
+    > p {
+      margin: 0;
+    }
+    > .submit {
+      > input[type="text"] {
+        width: 100%;
+        height: 100px;
+      }
+      div {
+        width: 100%;
+        background-color: #ebebeb;
+        overflow: hidden;
+        border: 1px solid #aaa;
+        position: relative;
+        top: -24px;
+        > input[type="submit"] {
+          float: right;
+          border: 0;
+          height: 35px;
+          padding: 0 20px;
+          color: #fff;
+
+          background-color: @title-background-color;
+        }
+      }
+    }
+  }*/
+}
+
+/*评论 E*/

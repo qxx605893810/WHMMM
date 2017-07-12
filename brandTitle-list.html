@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端适口 -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>商城导航</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/comment.less"/>
+    <link rel="stylesheet/less" href="./css/brandTitle-list.less">
+    <script type="text/javascript" src='./libs/less/less.js'></script>
+    <script type="text/html" id="contentTemplate">
+    {{each result as value i}}
+    <div class="brand">
+        <span class="brandTag">{{i+1}}</span>
+        <a href="#">
+            <div class="brand-name">{{value.brandName}}</div>
+            <span class="brand-sell">{{value.brandInfo}}</span>
+        </a>
+    </div>
+    {{/each}}
+</script>
+</head>
+<body>
+<!-- 头部 B -->
+<header id="header">
+</header>
+<!-- 头部 E -->
+<!-- 搜索 B -->
+<section id="search">
+</section>
+<!-- 搜索 E -->
+<!--nav B-->
+<div id="nav">
+    <div class="nav">
+        <ol class="breadcrumb">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">品牌大全</a></li>
+            <li class="active">平板电视哪个牌子好</li>
+        </ol>
+    </div>
+</div>
+<!--nav E-->
+<!--content B-->
+<div id="content">
+    <div class="content">
+        <span>品牌电视哪个牌子好</span>
+        <div class="brandInfo">
+         <!--   <div class="brand">
+                <span class="brandTag">1</span>
+                <a href="#">
+                    <div class="brand-name">海信平板电视</div>
+                    <span class="brand-sell">30天全网销量</span>
+                </a>
+            </div>
+            <div class="brand">
+                <span class="brandTag">1</span>
+                <a href="#">
+                    <div class="brand-name">海信平板电视</div>
+                    <span class="brand-sell">30天全网销量</span>
+                </a>
+            </div>
+            <div class="brand">
+                <span class="brandTag">1</span>
+                <a href="#">
+                    <div class="brand-name">海信平板电视</div>
+                    <span class="brand-sell">30天全网销量</span>
+                </a>
+            </div>
+            <div class="brand">
+                <span class="brandTag">1</span>
+                <a href="#">
+                    <div class="brand-name">海信平板电视</div>
+                    <span class="brand-sell">30天全网销量</span>
+                </a>
+            </div>
+            <div class="brand">
+                <span class="brandTag">1</span>
+                <a href="#">
+                    <div class="brand-name">海信平板电视</div>
+                    <span class="brand-sell">30天全网销量</span>
+                </a>
+            </div>-->
+        </div>
+        <div class="sell">
+            <div class="sellRank">平板电视产量销量排行榜</div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img src="./images/product_info.jpg" alt=""/>
+                    </a>
+                </div>
+                <div class="media-body">
+                    <div class="normal-info">
+                        <span class="product-name">产品名字</span>
+                        <div class="product-price">$2000</div>
+                    </div>
+                    <div class="other-info">
+                        <span class="from-time">报价(7)</span>
+                        <span class="comment">全网评价(200)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--content E-->
+<!-- 底部 B -->
+<section id="footer">
+</section>
+<!-- 底部 E -->
+</body>
+<script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="./libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script src="js/commen.js"></script>
+<script src="js/brandTitle-list.js"></script>
+</html>

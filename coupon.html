@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端适口 -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>优惠券</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/comment.less"/>
+    <link rel="stylesheet/less" href="./css/coupon.less">
+    <script type="text/javascript" src='./libs/less/less.js'></script>
+    <script type="text/html" id="productId">
+        {{each result as value i}}
+        <div class="col-xs-4 product">
+            <a href="coupon_list.html?couponId={{value.couponId}}">
+                {{#value.couponImg}}
+                <div class="text">{{value.couponTitle}}</div>
+            </a>
+        </div>
+        {{/each}}
+    </script>
+</head>
+<body>
+<!-- 头部 B -->
+<header id="header" class="back">
+</header>
+<!-- 头部 E -->
+<!--content B-->
+<div id="content">
+    <div class="row">
+       <!-- <div class="col-xs-4 product">
+            <a href="#">
+                <img src="./images/ic_temai.png" alt=""/>
+
+                <div class="text">肯德基</div>
+            </a>
+        </div>
+        <div class="col-xs-4 product">
+            <a href="#">
+                <img src="./images/ic_temai.png" alt=""/>
+
+                <div class="text">肯德基</div>
+            </a>
+        </div>
+        <div class="col-xs-4 product">
+            <a href="#">
+                <img src="./images/ic_temai.png" alt=""/>
+
+                <div class="text">肯德基</div>
+            </a>
+        </div>
+        <div class="col-xs-4 product">
+            <a href="#">
+                <img src="./images/ic_temai.png" alt=""/>
+
+                <div class="text">肯德基</div>
+            </a>
+        </div>-->
+    </div>
+</div>
+<!--content E-->
+<!-- 底部 B -->
+<section id="footer">
+</section>
+<!-- 底部 E -->
+</body>
+<script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="./libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script src="js/commen.js"></script>
+<script src="js/coupon.js"></script>
+</html>

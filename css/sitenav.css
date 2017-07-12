@@ -1,0 +1,13 @@
+#content1 {
+  padding: 10px;
+}
+#content1 > .product {
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  background-color: #f4f4f4;
+  margin: 10px 0 0 10px;
+  display: inline-block;
+}
+#content1 > .product > a > span {
+  color: #222222;
+}

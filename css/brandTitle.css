@@ -1,0 +1,75 @@
+/*导航 B*/
+#nav > .nav > .breadcrumb {
+  border-top: 2px solid #e6e6e6;
+  border-bottom: 2px solid #e6e6e6;
+  margin-bottom: 0;
+}
+#nav > .nav > .breadcrumb > li {
+  font-size: 16px;
+}
+#nav > .nav > .breadcrumb > li > a {
+  color: #333;
+  text-decoration: none;
+}
+#nav > .nav > .breadcrumb > li::before {
+  content: ">";
+}
+#nav > .nav > .breadcrumb > li:first-of-type::before {
+  content: "";
+}
+/*导航 E*/
+/*内容 B*/
+#content {
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+#content > p {
+  font-size: 18px;
+  color: #874604;
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+#content > .contentList > .panel-group > .panel {
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+}
+#content > .contentList > .panel-group > .panel > .panel-heading {
+  border-bottom: 1px solid #262626;
+}
+#content > .contentList > .panel-group > .panel > .panel-heading > .panel-title > a {
+  text-decoration: none;
+  display: block;
+  color: #080808;
+  font-weight: 600;
+  padding: 5px;
+  position: relative;
+}
+#content > .contentList > .panel-group > .panel > .panel-heading > .panel-title > a::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 7px;
+  background: url("../images/arrow_down.gif") no-repeat;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#content > .contentList > .panel-group > .panel > .panel-heading > .panel-title > a.collapsed::before {
+  background: url("../images/arrow_up.gif") no-repeat;
+}
+#content > .contentList > .panel-group > .panel > .panel-collapse > .panel-body {
+  border: 0;
+  border-bottom: 1px solid red;
+}
+#content > .contentList > .panel-group > .panel > .panel-collapse > .panel-body > a {
+  display: block;
+}
+#content > .contentList > .panel-group > .panel > .panel-collapse > .panel-body > a > .brandName {
+  float: left;
+}
+#content > .contentList > .panel-group > .panel > .panel-collapse > .panel-body > a > .brandInfo {
+  float: right;
+}
+/*内容 E*/

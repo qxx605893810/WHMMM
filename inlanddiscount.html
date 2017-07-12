@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端适口 -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>国内折扣</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="./css/comment.less"/>
+    <link rel="stylesheet/less" href="css/inlanddiscount.less">
+    <script type="text/javascript" src='./libs/less/less.js'></script>
+    <script type="text/html" id="productTemplateId">
+    {{each result as value i}}
+    <div class="product col-xs-6" >
+        <a href="#">
+            {{#value.productImg}}
+            <p class="name">{{value.productName}}</p>
+            <p class="price">{{value.productPrice}}</p>
+        </a>
+        <div class="shop">{{value.productFrom}}|{{value.productTime}}</div>
+    </div>
+    {{/each}}
+</script>
+</head>
+<body>
+<!-- 头部 B -->
+<header id="header" class="back">
+</header>
+<!-- 头部 E -->
+<!-- 搜索 B -->
+<section id="search">
+</section>
+<!-- 搜索 E -->
+<!--product B-->
+<div id="product" >
+    <div class="row">
+
+    </div>
+    <div class="load">
+        <img src="./images/loading.gif" alt=""/>
+        <div class="load-info">已经加载完全部的数据</div>
+    </div>
+</div>
+<!--product E-->
+
+<!-- 底部 B -->
+<section id="footer">
+</section>
+<!-- 底部 E -->
+
+
+</body>
+<script type="text/javascript" src="./libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="./libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script src="js/commen.js"></script>
+<script src="js/inlanddiscount.js"></script>
+</html>
